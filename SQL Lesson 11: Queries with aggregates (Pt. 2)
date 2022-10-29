@@ -1,0 +1,16 @@
+Exercise
+
+For this exercise, you are going to dive deeper into Employee data at the film studio. Think about the different clauses you want to apply for each task.
+
+
+RESET
+Exercise 11 — Tasks
+
+    Find the number of Artists in the studio (without a HAVING clause)
+    Ans-SELECT role, COUNT(*) as Number_of_artists FROM employees WHERE role = "Artist";
+    
+    Find the number of Employees of each role in the studio 
+    Ans-SELECT role, COUNT(*) FROM employees GROUP BY role;
+    
+    Find the total number of years employed by all Engineers
+    Ans-SELECT role, SUM(years_employed) FROM employees GROUP BY role HAVING role = "Engineer";
